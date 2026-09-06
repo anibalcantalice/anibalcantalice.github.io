@@ -1,0 +1,158 @@
+---
+title: "Aníbal Cantalice"
+subtitle: "Cientista · Professor"
+about:
+  template: trestles
+  image: img/Capa.jpeg
+  image-shape: round
+---
+
+<style>
+
+/* =========================
+   BLOCO PRINCIPAL
+   ========================= */
+
+.quarto-about-trestles {
+  max-width: 900px !important;
+  margin: 2.5rem auto 0 auto !important;
+  column-gap: 45px !important;
+}
+
+
+/* =========================
+   COLUNA ESQUERDA
+   Foto + nome + cargo
+   ========================= */
+
+.quarto-about-trestles .about-entity {
+  flex: 0 0 260px !important;
+  max-width: 260px !important;
+}
+
+
+/* Foto */
+.quarto-about-trestles .about-image {
+  width: 215px !important;
+  height: 215px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* Nome */
+.quarto-about-trestles .about-entity h1 {
+  font-size: 1.55rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+
+/* Cientista · Professor */
+.quarto-about-trestles .about-entity p.subtitle,
+.quarto-about-trestles .about-entity .subtitle {
+  text-align: center !important;
+  width: 100%;
+  font-size: 0.95rem !important;
+}
+
+
+/* =========================
+   COLUNA DIREITA
+   ========================= */
+
+.quarto-about-trestles .about-contents {
+  flex: 1 1 520px !important;
+  max-width: 540px !important;
+  padding-left: 32px !important;
+}
+
+
+/* Texto introdutório */
+.quarto-about-trestles .about-contents p {
+  line-height: 1.65;
+}
+
+
+/* =========================
+   SAIBA MAIS
+   ========================= */
+
+.about-more {
+  margin-top: 0.9rem;
+  margin-bottom: 1.15rem;
+}
+
+.about-more a {
+  text-decoration: none;
+}
+
+
+/* =========================
+   ÍCONES
+   ========================= */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+}
+
+
+.social-icons a {
+  color: #5f6368;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.social-icons a:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+
+/* Remove sublinhado dos ícones */
+.social-icons a::after {
+  display: none;
+}
+
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .quarto-about-trestles {
+    margin-top: 1.5rem !important;
+  }
+
+  .quarto-about-trestles .about-contents {
+    padding-left: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 22px;
+    margin-top: 1rem;
+  }
+
+}
+
+</style>
+
+
+Sou **Etnobiólogo** e cientista de dados, doutor em Etnobiologia e Conservação da Natureza. _Atuo com pesquisa de campo, análise de dados e métodos quantitativos para investigar sistemas socioecológicos_.
+
+<div class="about-more">
+
+[Saiba mais sobre mim →](sobre.qmd)

@@ -1,0 +1,34 @@
+---
+title: "Meu primeiro post"
+description: "Um exemplo para você ver como o blog funciona"
+author: "Seu Nome"
+date: "2026-09-05"
+categories: [novidades, exemplo]
+image: "thumbnail.png"
+---
+
+Este é um post de exemplo. Para criar um novo, basta duplicar esta pasta
+dentro de `blog/posts/`, renomeá-la e editar o texto.
+
+## Escrevendo com R
+
+Como o site é feito em Quarto, você pode misturar texto com código R que é
+executado de verdade na hora de gerar a página:
+
+```{r}
+#| label: exemplo
+#| echo: true
+x <- rnorm(100)
+mean(x)
+```
+
+E também gerar gráficos automaticamente:
+
+```{r}
+#| label: grafico
+#| fig-cap: "Um histograma de exemplo"
+hist(x, col = "steelblue", main = "", xlab = "Valores")
+```
+
+Escreva em Markdown normalmente: **negrito**, *itálico*, listas, links e
+imagens funcionam como esperado.

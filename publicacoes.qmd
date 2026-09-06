@@ -1,0 +1,907 @@
+---
+title: "Publicações"
+lang: pt
+page-layout: full
+toc: false
+---
+
+<style>
+
+/* =========================================================
+   ÁREA PRINCIPAL
+   ========================================================= */
+
+.publicacoes-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CARDS DE CATEGORIAS
+   ========================================================= */
+
+.pub-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 10px 0 35px 0;
+}
+
+.pub-card {
+  border-radius: 12px;
+  padding: 22px 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e3e6e8;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pub-card.ativo {
+  border-color: currentColor;
+  box-shadow: 0 0 0 1px currentColor;
+}
+
+
+/* =========================================================
+   ÍCONES
+   ========================================================= */
+
+.pub-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  margin: 0 auto 10px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.pub-card-titulo {
+  font-weight: 650;
+  font-size: 0.95rem;
+}
+
+.pub-card-numero {
+  margin-top: 3px;
+  font-size: 0.80rem;
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   CORES
+   ========================================================= */
+
+.card-artigo {
+  background: #f5f9ff;
+  color: #1769aa;
+}
+
+.card-artigo .pub-icon-box {
+  background: #ddecff;
+}
+
+
+.card-capitulo {
+  background: #f4fbf7;
+  color: #18845c;
+}
+
+.card-capitulo .pub-icon-box {
+  background: #daf3e5;
+}
+
+
+.card-livro {
+  background: #faf7ff;
+  color: #7653af;
+}
+
+.card-livro .pub-icon-box {
+  background: #eee5ff;
+}
+
+
+.card-divulgacao {
+  background: #fff9f2;
+  color: #c56b19;
+}
+
+.card-divulgacao .pub-icon-box {
+  background: #ffe9d3;
+}
+
+
+/* =========================================================
+   CABEÇALHO DA LISTA
+   ========================================================= */
+
+.pub-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  margin-bottom: 0;
+
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.pub-list-header h2 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.pub-show-all {
+  border: 0;
+  background: transparent;
+  color: #1769aa;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.pub-show-all:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   PUBLICAÇÃO
+   ========================================================= */
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) 60px;
+  gap: 14px;
+
+  padding: 17px 4px;
+
+  border-bottom: 1px solid #e6e8ea;
+}
+
+
+/* ícone lateral */
+
+.pub-item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+/* título */
+
+.pub-title {
+  line-height: 1.30;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.pub-title a {
+  color: #155ac4;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  text-decoration: underline;
+}
+
+
+/* autores */
+
+.pub-author {
+  margin-top: 4px;
+
+  font-size: 0.83rem;
+  line-height: 1.35;
+
+  color: #61666b;
+}
+
+
+/* detalhes */
+
+.pub-details {
+  margin-top: 3px;
+
+  font-size: 0.82rem;
+  line-height: 1.35;
+
+  color: #64696e;
+}
+
+
+/* ano */
+
+.pub-year {
+  text-align: right;
+
+  font-size: 0.84rem;
+  font-weight: 650;
+
+  color: #454a4f;
+}
+
+
+/* =========================================================
+   TAG
+   ========================================================= */
+
+.pub-tag {
+  display: inline-block;
+
+  margin-top: 6px;
+  padding: 2px 8px;
+
+  border-radius: 10px;
+
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+
+.item-artigo .pub-item-icon,
+.tag-artigo {
+  background: #ddecff;
+  color: #1769aa;
+}
+
+.item-capitulo .pub-item-icon,
+.tag-capitulo {
+  background: #daf3e5;
+  color: #18845c;
+}
+
+.item-livro .pub-item-icon,
+.tag-livro {
+  background: #eee5ff;
+  color: #7653af;
+}
+
+.item-divulgacao .pub-item-icon,
+.tag-divulgacao {
+  background: #ffe9d3;
+  color: #c56b19;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .pub-categorias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .pub-categorias {
+    gap: 8px;
+  }
+
+  .pub-card {
+    padding: 16px 8px;
+  }
+
+  .pub-item {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .pub-year {
+    grid-column: 2;
+    text-align: left;
+    margin-top: -3px;
+  }
+
+}
+
+</style>
+
+
+
+<div class="publicacoes-container">
+
+<div id="pub-categorias" class="pub-categorias"></div>
+
+
+<div class="pub-list-header">
+
+<h2 id="pub-titulo-lista">
+Todas as publicações
+</h2>
+
+<button
+  class="pub-show-all"
+  onclick="filtrarPublicacoes('todas')">
+  Mostrar todas
+</button>
+
+</div>
+
+
+<div id="pub-lista"></div>
+
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   DADOS
+   ========================================================= */
+
+const publicacoes = [
+
+/* =========================================================
+   ARTIGOS CIENTÍFICOS
+   ========================================================= */
+
+{
+title: `Repeated cross-sectional study of knowledge and use of wild food plants in the Caatinga of Northeastern Brazil`,
+author: `De La Cruz, M. P.; Cantalice, A. S.; Jacob, M. C. M.; Albuquerque, U. P.`,
+date: `2026-08-10`,
+category: `artigo`,
+path: `https://doi.org/10.1186/s13002-026-00945-x`,
+description: `<em>Journal of Ethnobiology and Ethnomedicine</em>, 2026.`
+},
+
+
+{
+title: `‘Dígame usted, si conoce la molienda’ - A photoethnographic essay on traditional sugar-making practices in Santa Mónica, Tianguistengo, Mexico`,
+author: `Hernández-Pacheco, D.; Cantalice, A. S.; Mendes, C. H. T.; Santos, F. I. R.; González-López, G.; Campos, L. Z. O.; De La Cruz, M. P.; Silva, T. C.; Pulido Silva, M. T.`,
+date: `2026-03-30`,
+category: `artigo`,
+path: `https://doi.org/10.32859/era.33.72.1-15`,
+description: `<em>Ethnobotany Research and Applications</em>, 33, 1–15.`
+},
+
+{
+title: `Recife Charter – Pathways for the future of ethnobiology`,
+author: `Ferreira Júnior, W. S.; Abdullah, A.; Castiñeira Latorre, E.; Ferraz, T. S. O.; Abreu, M. B.; et al.`,
+date: `2026-02-18`,
+category: `artigo`,
+path: `https://doi.org/10.15451/ec2026-02-15-06-1-9`,
+description: `<em>Ethnobiology and Conservation</em>, 15, 1–9.`
+},
+
+{
+title: `Impacts of global climate change on nutrition and its effects on neuroeducational outcomes`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Ferreira Júnior, W. S.; Gusmão, R. A. F.; Magalhães, A. R.; et al.`,
+date: `2026-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.1016/j.nexres.2026.101472`,
+description: `<em>Next Research</em>, 7, 101472.`
+},
+
+{
+title: `SpiderATLAS: A Database of Spider Traits and Distributions in the Brazilian Atlantic Forest`,
+author: `Boldorini, G. X.; Martins, P. M.; Brescovit, A. D.; Santos, A. J.; Carvalho, L. S.; Oliveira, U.; Russo, P.; Brito, J. C. B.; Barbosa, A. P.; Rodrigues, A. C. B.; Cantalice, A. S.; et al.`,
+date: `2025-10-25`,
+category: `artigo`,
+path: `https://doi.org/10.1111/jbi.70081`,
+description: `<em>Journal of Biogeography</em>, 52(12), e70081.`
+},
+
+{
+title: `Reframing Botanical Blindness and Imperception Through Evolutionary Lenses`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Oliveira, E. S.; Santos, F. I. R.; Santos, H. C.; Lima, I. S.; et al.`,
+date: `2025-07-07`,
+category: `artigo`,
+path: `https://doi.org/10.1590/1677-941X-ABB-2024-0236`,
+description: `<em>Acta Botanica Brasilica</em>, 39, e20240236.`
+},
+
+{
+title: `LandFrag: A Dataset to Investigate the Effects of Forest Loss and Fragmentation on Biodiversity`,
+author: `Gonçalves-Souza, T.; Vancine, M. H.; Sanders, N. J.; Haddad, N. M.; Cortinhas, L.; Aase, A. L. T. O.; et al.`,
+date: `2025-02-25`,
+category: `artigo`,
+path: `https://doi.org/10.1111/geb.70015`,
+description: `<em>Global Ecology and Biogeography</em>, 34(2), e70015.`
+},
+
+{
+title: `Effects of socioeconomic and human-modified landscape variables on medicinal species richness at a macroscale: the case of the Caatinga, Brazil`,
+author: `Cantalice, A. S.; Gonçalves-Souza, T.; Albuquerque, U. P.`,
+date: `2025-01-24`,
+category: `artigo`,
+path: `https://doi.org/10.1186/s13002-025-00757-5`,
+description: `<em>Journal of Ethnobiology and Ethnomedicine</em>, 21, 5.`
+},
+
+{
+title: `Is Ethnobiologist Training at Risk? Challenges of a Brazilian Graduate Program`,
+author: `Brito-Junior, V. M.; Alves, A. C.; Quirino, A. M. S.; Cantalice, A. S.; Magalhães, A.; et al.`,
+date: `2025-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.15451/ec2025-02-14.13-1-9`,
+description: `<em>Ethnobiology and Conservation</em>, 14(13), 1–9.`
+},
+
+{
+title: `Embracing Methodological Issues in Ethnobiology and Overcoming Challenges`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Magalhães, A. R.; Coe, M. A.; Gusmão, R. A. F.`,
+date: `2024-09-27`,
+category: `artigo`,
+path: `https://doi.org/10.1590/1677-941X-ABB-2024-0085`,
+description: `<em>Acta Botanica Brasilica</em>, 38, e20240085.`
+},
+
+{
+title: `Can family structure and contact with natural resources influence young people's knowledge about medicinal plants? An approach in the Northeast of Brazil`,
+author: `Mata, P. T.; Cantalice, A. S.; Albuquerque, U. P.; Silva, R. H.; Silva, T. C.`,
+date: `2024-09-19`,
+category: `artigo`,
+path: `https://doi.org/10.1186/s13002-024-00728-2`,
+description: `<em>Journal of Ethnobiology and Ethnomedicine</em>, 20, 90.`
+},
+
+{
+title: `Do Gendered Social Roles Drive Knowledge Variation in Local Medical Systems?`,
+author: `Torres-Avilez, W. M.; Nascimento, A. L. B.; Cantalice, A. S.; Medeiros, P. M.; Silva, T. C.; Albuquerque, U. P.`,
+date: `2024-09-18`,
+category: `artigo`,
+path: `https://doi.org/10.1007/s10745-024-00537-x`,
+description: `<em>Human Ecology</em>, 52(4), 813–822.`
+},
+
+{
+title: `Gender Influence on Local Botanical Knowledge about Medicinal Plants: A Study in Northeast Brazil`,
+author: `Gomes, C. S. R.; Gama, A. D. S.; Cantalice, A. S.; Mata, P. T.; Silva, T. C.; Medeiros, P. M.`,
+date: `2024-02-28`,
+category: `artigo`,
+path: `https://doi.org/10.32859/era.28.45.1-8`,
+description: `<em>Ethnobotany Research and Applications</em>, 28, 1–8.`
+},
+
+{
+title: `Nexus among climate change, food systems, and human health: An interdisciplinary research framework in the Global South`,
+author: `Gomes, S. M.; Carvalho, A. M.; Cantalice, A. S.; Magalhães, A. R.; Tregidgo, D.; Oliveira, D. V. B.; et al.`,
+date: `2024-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.1016/j.envsci.2024.103885`,
+description: `<em>Environmental Science & Policy</em>, 161, 103885.`
+},
+
+{
+title: `How Do Local Medical Systems Work? An Overview of the Evidence`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Oliveira, D. V. B.; Oliveira, E. S.; Santos, F. I. R.; Abreu, M. B.; Brito-Júnior, V. M.; Ferreira-Júnior, W. S.`,
+date: `2024-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.1007/s12231-023-09587-6`,
+description: `<em>Economic Botany</em>, 78(1), 52–67.`
+},
+
+{
+title: `Contributions to the Identification of Cultural Keystone Species from an Emic Perspective: a Case Study from Northeast Brazil`,
+author: `Sousa, R. S.; Cantalice, A. S.; Santos, F. I. R.; Silva, T. C.; Albuquerque, U. P.`,
+date: `2024-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.1007/s12231-024-09603-3`,
+description: `<em>Economic Botany</em>, 78(2), 182–196.`
+},
+
+{
+title: `Why is traditional ecological knowledge (TEK) maintained? An answer to Hartel et al. (2023)`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Oliveira, D. V.; Oliveira, E. S.; Santos, E. B.; Santos, F. I. R.; et al.`,
+date: `2024-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.1007/s10531-024-02794-0`,
+description: `<em>Biodiversity and Conservation</em>, 33(2), 859–866.`
+},
+
+{
+title: `Exploring Large Digital Bodies for the Study of Human Behavior`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Oliveira, E. S.; Moura, J. M. B.; Santos, R. K. S.; Silva, R. H.; Brito-Júnior, V. M.; Ferreira-Júnior, W. S.`,
+date: `2023-05-23`,
+category: `artigo`,
+path: `https://doi.org/10.1007/s40806-023-00363-2`,
+description: `<em>Evolutionary Psychological Science</em>, 9(3), 385–394.`
+},
+
+{
+title: `Photoethnography of Ceramic Craftsmen from Teresina, Piauí, Brazil`,
+author: `Cantalice, A. S.; Alencar, N. L.`,
+date: `2019-01-01`,
+category: `artigo`,
+path: `https://doi.org/10.22276/ethnoscientia.v4i1.202`,
+description: `<em>Ethnoscientia</em>, 4(1).`
+},
+
+{
+title: `Morphometric studies and analyses of germinability in Cenostigma macrophyllum Tul. in an urban-rural gradient in Teresina-PI, Brazil`,
+author: `Faria, M. H. F.; Silva, A. B.; Cantalice, A. S.; Medeiros, M. J. L.; Lopes, C. G. R.`,
+date: `2018-12-03`,
+category: `artigo`,
+path: `https://doi.org/10.5327/Z2176-947820180369`,
+description: `<em>Revista Brasileira de Ciências Ambientais</em>, 49, 140–150.`
+},
+
+
+/* =========================================================
+   LIVROS
+   ========================================================= */
+
+{
+title: `Descobrindo os segredos da natureza: uma introdução à etnobiologia`,
+author: `Albuquerque, U. P.; Cantalice, A. S.; Oliveira, D. V. B.; Oliveira, E. S.; Santos, F. I. R.; Dantas, J. I. M.; Moura, J. M. B.; Siqueira, J. I. A.; Elias, L.; Abreu, M. B.; Santos, M. N.; Santos, R. K. S.; Silva, R. H.; Brito Junior, V. M.`,
+date: `2023-01-01`,
+category: `livro`,
+path: `https://canal6.com.br/livreacesso/livro/descobrindo-os-segredos-da-natureza-uma-introducao-a-etnobiologia/`,
+description: `1. ed. Bauru: Canal 6, 2023. v. 1, 84 p.`
+},
+
+{
+title: `Novas fronteiras, novos desafios: Anais do IX Encontro Nordestino de Etnobiologia e Etnoecologia e I Encontro de Etnobiologia e Etnoecologia do Piauí`,
+author: `Souto, W. M. S. (Org.); Alencar, N. L. (Org.); Cantalice, A. S. (Org.); Junior, V. C. L. (Org.)`,
+date: `2017-01-01`,
+category: `livro`,
+path: `https://www.etnobiologia.org/post/2018/01/09/anais-ix-encontro-nordestino-de-etnobiologia-e-etnoecologia-enee`,
+description: `1. ed. Teresina: SBEE, 2017. 359 p.`
+},
+
+
+/* =========================================================
+   CAPÍTULOS DE LIVRO
+   ========================================================= */
+
+{
+title: `Teoria Socioecológica da Maximização`,
+author: `Cantalice, A. S.; Abreu, M. B.`,
+date: `2024-01-01`,
+category: `capitulo`,
+path: `https://canal6.com.br/livreacesso/livro/bases-ecologicas-e-evolutivas-do-comportamento-humano-2a-edicao/`,
+description: `In: Albuquerque, U. P.; Valentova, J. V.; Varella, M. A. C. (Orgs.). <em>Bases ecológicas e evolutivas do comportamento humano</em>. 2. ed. Bauru: Canal 6, 2024, v. 1.`
+},
+
+{
+title: `Edward Osborne Wilson e a Sociobiologia`,
+author: `Cantalice, A. S.`,
+date: `2024-01-01`,
+category: `capitulo`,
+path: `https://canal6.com.br/livreacesso/livro/bases-ecologicas-e-evolutivas-do-comportamento-humano-2a-edicao/`,
+description: `In: Albuquerque, U. P.; Valentova, J. V.; Varella, M. A. C. (Orgs.). <em>Bases ecológicas e evolutivas do comportamento humano</em>. 2. ed. Bauru: Canal 6, 2024, v. 1.`
+},
+
+{
+title: `Conceitos-chave em etnobiologia aplicada à conservação da natureza`,
+author: `Cantalice, A. S.; Mendes, C. H. T.; Siqueira, J. I. A.; Mata, P. T.; Sousa, R. S.; Ferreira Junior, W. S.`,
+date: `2024-01-01`,
+category: `capitulo`,
+path: `https://canal6.com.br/livreacesso/livro/etnobiologia-e-gestao-de-recursos-da-sociobiodiversidade-conceitos-praticas-e-desafios/`,
+description: `In: Albuquerque, U. P. (Org.). <em>Etnobiologia e gestão de recursos da sociobiodiversidade: conceitos, práticas e desafios</em>. 1. ed. Bauru: Canal 6, 2024, v. 1, p. 11–36.`
+},
+
+{
+title: `Bioeconomia: crítica e oportunidade de benefícios para as economias locais`,
+author: `Lucena, R. F. P.; Cantalice, A. S.; Souza, A. S.; Cruz, M. P. L.; Silva, R. R. V.`,
+date: `2024-01-01`,
+category: `capitulo`,
+path: `https://canal6.com.br/livreacesso/livro/etnobiologia-e-gestao-de-recursos-da-sociobiodiversidade-conceitos-praticas-e-desafios/`,
+description: `In: Albuquerque, U. P. (Org.). <em>Etnobiologia e gestão de recursos da sociobiodiversidade: conceitos, práticas e desafios</em>. 1. ed. Bauru: Canal 6, 2024, v. 1, p. 61–84.`
+},
+
+{
+title: `O papel da carne no meio ambiente: tendências e perspectivas`,
+author: `Cantalice, A. S.; Carvalho, A. M.`,
+date: `2024-01-01`,
+category: `capitulo`,
+path: ``,
+description: `In: Carvalho, A. M.; Jacob, M. C. M.; Gomes, S. M. (Orgs.). <em>Complexidades da carne</em>. 1. ed. São Paulo: Faculdade de Saúde Pública da USP, 2024, v. 1, p. 37–49.`
+},
+
+{
+title: `(Re)construção dos saberes: ultrapassando as barreiras da linha abissal no ensino de ciências`,
+author: `Almeida, M. N.; Mafort, M. E.; Cantalice, A. S.`,
+date: `2019-01-01`,
+category: `capitulo`,
+path: ``,
+description: `In: Gonçalves, F. A. M. F. (Org.). <em>Ensino de ciências e educação matemática</em>. 1. ed. Antonella Carvalho de Oliveira, 2019, v. 1, p. 22–31.`
+},
+
+
+/* =========================================================
+   DIVULGAÇÃO CIENTÍFICA
+   ========================================================= */
+
+{
+title: `A árvore sagrada da Amazônia`,
+author: `Cantalice, Aníbal da Silva; Mafort, Marcela Eringe; Miranda, Jean Carlos`,
+date: `2020-09-17`,
+category: `divulgacao`,
+path: `https://www.researchgate.net/publication/344580386_A_arvore_sagrada_da_Amazonia`,
+description: `<em>Revista Ciência Hoje das Crianças</em>, p. 10–13, 17 set. 2020.`
+},
+
+{
+title: `Vacinas, porque são tão importantes?`,
+author: `Cantalice, Aníbal da Silva; Mafort, Marcela Eringe; Miranda, Jean Carlos`,
+date: `2020-08-12`,
+category: `divulgacao`,
+path: `https://www.researchgate.net/publication/344580478_Vacinas_porque_sao_tao_importantes`,
+description: `<em>Revista Ciência Hoje das Crianças</em>, v. 313, p. 6–9, 12 ago. 2020.`
+},
+
+{
+title: `Forte e belo do sertão`,
+author: `Cantalice, Aníbal da Silva; Mafort, Marcela Eringe; Miranda, Jean Carlos`,
+date: `2019-12-02`,
+category: `divulgacao`,
+path: `https://www.researchgate.net/publication/342420701_Forte_e_belo_do_sertao`,
+description: `<em>Revista Ciência Hoje das Crianças</em>, v. 306, p. 1–9, 2 dez. 2019.`
+},
+
+{
+title: `Etnoconhecimento - Saberes que ultrapassam o tempo`,
+author: `Mafort, Marcela Eringe; Cantalice, Aníbal da Silva; Miranda, Jean Carlos`,
+date: `2019-09-02`,
+category: `divulgacao`,
+path: `https://www.researchgate.net/publication/335819979_Etnoconhecimento_-_Saberes_que_ultrapassam_o_tempo`,
+description: `<em>CHC | Revista Ciência Hoje das Crianças</em>, v. 301, p. 12–15, 2 set. 2019.`
+}
+
+];
+
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+const categorias = {
+
+artigo: {
+  nome: "Artigos científicos",
+  singular: "Artigo científico",
+  icone: `<i class="bi bi-file-earmark-text"></i>`
+},
+
+capitulo: {
+  nome: "Capítulos de livro",
+  singular: "Capítulo de livro",
+  icone: `<i class="bi bi-book-half"></i>`
+},
+
+livro: {
+  nome: "Livros",
+  singular: "Livro",
+  icone: `<i class="bi bi-journal-bookmark-fill"></i>`
+},
+
+divulgacao: {
+  nome: "Divulgação científica",
+  singular: "Divulgação científica",
+  icone: `<i class="bi bi-megaphone"></i>`
+}
+
+};
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+function criarCards() {
+
+const area = document.getElementById("pub-categorias");
+
+Object.entries(categorias).forEach(([codigo, cat]) => {
+
+  const n =
+    publicacoes.filter(
+      p => p.category === codigo
+    ).length;
+
+  const card = document.createElement("div");
+
+  card.className =
+    `pub-card card-${codigo}`;
+
+  card.dataset.category = codigo;
+
+  card.onclick =
+    () => filtrarPublicacoes(codigo);
+
+  card.innerHTML = `
+
+    <div class="pub-icon-box">
+      ${cat.icone}
+    </div>
+
+    <div class="pub-card-titulo">
+      ${cat.nome}
+    </div>
+
+    <div class="pub-card-numero">
+      ${n} ${n === 1 ? "publicação" : "publicações"}
+    </div>
+
+  `;
+
+  area.appendChild(card);
+
+});
+
+}
+
+
+/* =========================================================
+   LISTA
+   ========================================================= */
+
+function renderizarLista(filtro = "todas") {
+
+const area =
+  document.getElementById("pub-lista");
+
+area.innerHTML = "";
+
+
+let dados = [...publicacoes];
+
+
+if (filtro !== "todas") {
+
+  dados = dados.filter(
+    p => p.category === filtro
+  );
+
+}
+
+
+dados.sort(
+  (a, b) =>
+    new Date(b.date) -
+    new Date(a.date)
+);
+
+
+dados.forEach(pub => {
+
+  const cat =
+    categorias[pub.category];
+
+  const ano =
+    pub.date.substring(0, 4);
+
+
+  const titulo =
+    pub.path
+
+      ? `<a href="${pub.path}"
+            target="_blank"
+            rel="noopener noreferrer">
+            ${pub.title}
+         </a>`
+
+      : pub.title;
+
+
+  const item =
+    document.createElement("div");
+
+
+  item.className =
+    `pub-item item-${pub.category}`;
+
+
+  item.innerHTML = `
+
+    <div class="pub-item-icon">
+      ${cat.icone}
+    </div>
+
+
+    <div class="pub-info">
+
+      <div class="pub-title">
+        ${titulo}
+      </div>
+
+      <div class="pub-author">
+        ${pub.author}
+      </div>
+
+      <div class="pub-details">
+        ${pub.description}
+      </div>
+
+      <span class="pub-tag tag-${pub.category}">
+        ${cat.singular}
+      </span>
+
+    </div>
+
+
+    <div class="pub-year">
+      ${ano}
+    </div>
+
+  `;
+
+
+  area.appendChild(item);
+
+});
+
+}
+
+
+/* =========================================================
+   FILTRO
+   ========================================================= */
+
+function filtrarPublicacoes(categoria) {
+
+document
+  .querySelectorAll(".pub-card")
+  .forEach(
+    x => x.classList.remove("ativo")
+  );
+
+
+if (categoria === "todas") {
+
+  document
+    .getElementById("pub-titulo-lista")
+    .textContent =
+      "Todas as publicações";
+
+}
+
+else {
+
+  const card =
+    document.querySelector(
+      `[data-category="${categoria}"]`
+    );
+
+  if (card) {
+    card.classList.add("ativo");
+  }
+
+
+  document
+    .getElementById("pub-titulo-lista")
+    .textContent =
+      categorias[categoria].nome;
+
+}
+
+
+renderizarLista(categoria);
+
+}
+
+
+/* =========================================================
+   INICIAR
+   ========================================================= */
+
+criarCards();
+renderizarLista();
+
+</script>

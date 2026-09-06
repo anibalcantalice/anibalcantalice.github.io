@@ -1,0 +1,183 @@
+project:
+  type: website
+
+website:
+  title: "Aníbal Cantalice"
+  description: "Site pessoal e acadêmico"
+  site-url: "https://Anibal-Cantalice.github.io"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Início
+
+      - href: sobre.qmd
+        text: Sobre
+
+      - href: blog/index.qmd
+        text: Blog
+
+      - href: projetos.qmd
+        text: Projetos
+
+      - href: publicacoes.qmd
+        text: Publicações
+
+    right:
+
+      # ORCID
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/0000-0003-0205-5219"
+        aria-label: ORCID
+
+      # Google Scholar
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com/citations?user=lnnl4CIAAAAJ&hl=pt-BR"
+        aria-label: Google Scholar
+
+      # Scopus
+      - text: "{{< ai scopus >}}"
+        href: "https://www.scopus.com/authid/detail.uri?authorId=58292756900"
+        aria-label: Scopus ID
+
+      # Lattes
+      - text: "{{< ai lattes >}}"
+        href: "http://lattes.cnpq.br/6088144368015242"
+        aria-label: Lattes
+
+      # GitHub
+      - icon: github
+        href: ""
+        aria-label: GitHub
+
+      # ResearchGate
+      - text: "{{< ai researchgate >}}"
+        href: "https://www.researchgate.net/profile/Anibal-Cantalice"
+        aria-label: ResearchGate
+
+      # LinkedIn
+      - icon: linkedin
+        href: ""
+        aria-label: LinkedIn
+
+      # E-mail
+      - icon: envelope
+        href: "mailto:anibalcantalice@gmail.com"
+        aria-label: E-mail
+
+  page-footer:
+    center: "© 2026 · Aníbal Cantalice · Feito com [Quarto](https://quarto.org)"
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    lang: pt
+
+    include-in-header:
+      - text: |
+          <style>
+
+          /* =====================================================
+             CORES DOS ÍCONES DA NAVBAR
+             ===================================================== */
+
+
+          /* ORCID */
+          .navbar a[aria-label="ORCID"],
+          .navbar a[aria-label="ORCID"] * {
+            color: #A6CE39 !important;
+            fill: #A6CE39 !important;
+          }
+
+
+          /* GOOGLE SCHOLAR */
+          .navbar a[aria-label="Google Scholar"],
+          .navbar a[aria-label="Google Scholar"] * {
+            color: #4285F4 !important;
+            fill: #4285F4 !important;
+          }
+
+
+          /* SCOPUS */
+          .navbar a[aria-label="Scopus"],
+          .navbar a[aria-label="Scopus"] * {
+            color: #E9711C !important;
+            fill: #E9711C !important;
+          }
+
+
+          /* LATTES */
+          .navbar a[aria-label="Lattes"],
+          .navbar a[aria-label="Lattes"] * {
+            color: #3264A8 !important;
+            fill: #3264A8 !important;
+          }
+
+
+          /* GITHUB */
+          .navbar a[aria-label="GitHub"],
+          .navbar a[aria-label="GitHub"] * {
+            color: #181717 !important;
+            fill: #181717 !important;
+          }
+
+
+          /* RESEARCHGATE */
+          .navbar a[aria-label="ResearchGate"],
+          .navbar a[aria-label="ResearchGate"] * {
+            color: #00CCBB !important;
+            fill: #00CCBB !important;
+          }
+
+
+          /* LINKEDIN */
+          .navbar a[aria-label="LinkedIn"],
+          .navbar a[aria-label="LinkedIn"] * {
+            color: #0A66C2 !important;
+            fill: #0A66C2 !important;
+          }
+
+
+          /* E-MAIL */
+          .navbar a[aria-label="E-mail"],
+          .navbar a[aria-label="E-mail"] * {
+            color: #6C757D !important;
+            fill: #6C757D !important;
+          }
+
+
+
+          /* =====================================================
+             EFEITO AO PASSAR O MOUSE
+             ===================================================== */
+
+          .navbar a[aria-label="ORCID"],
+          .navbar a[aria-label="Google Scholar"],
+          .navbar a[aria-label="Scopus"],
+          .navbar a[aria-label="Lattes"],
+          .navbar a[aria-label="GitHub"],
+          .navbar a[aria-label="ResearchGate"],
+          .navbar a[aria-label="LinkedIn"],
+          .navbar a[aria-label="E-mail"] {
+            transition:
+              opacity 0.15s ease,
+              transform 0.15s ease;
+          }
+
+
+          .navbar a[aria-label="ORCID"]:hover,
+          .navbar a[aria-label="Google Scholar"]:hover,
+          .navbar a[aria-label="Scopus"]:hover,
+          .navbar a[aria-label="Lattes"]:hover,
+          .navbar a[aria-label="GitHub"]:hover,
+          .navbar a[aria-label="ResearchGate"]:hover,
+          .navbar a[aria-label="LinkedIn"]:hover,
+          .navbar a[aria-label="E-mail"]:hover {
+            opacity: 0.70;
+            transform: translateY(-1px);
+          }
+
+          </style>

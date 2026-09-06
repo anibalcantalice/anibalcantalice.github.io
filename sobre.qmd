@@ -1,0 +1,925 @@
+---
+title: ""
+toc: true
+toc-title: "Nesta página"
+toc-location: right
+toc-depth: 2
+---
+
+<style>
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+/* =========================================================
+   BLOCO SUPERIOR — PERFIL + FORMAÇÃO
+   ========================================================= */
+
+.about-top {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 55px;
+  align-items: stretch;
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;
+}
+
+
+
+/* =========================================================
+   PERFIL
+   ========================================================= */
+
+.about-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border-right: 1px solid #dee2e6;
+}
+
+
+/* Bloco interno */
+.about-profile-inner {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+
+
+/* =========================================================
+   FOTO
+   ========================================================= */
+
+.about-profile-inner img {
+  display: block;
+
+  width: 230px;
+  height: 230px;
+
+  object-fit: cover;
+
+  /* enquadramento normal da imagem */
+  object-position: center;
+
+  border-radius: 50%;
+
+  margin: 0 0 24px 0;
+  padding: 0;
+
+  justify-self: center;
+}
+
+
+
+/* =========================================================
+   NOME
+   ========================================================= */
+
+.about-name {
+  display: block !important;
+
+  width: fit-content !important;
+  max-width: 100%;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  justify-self: center !important;
+
+  font-size: 1.55rem;
+  font-weight: 700;
+
+  line-height: 1;
+
+  text-align: center !important;
+
+  color: #343a40;
+}
+
+
+
+/* =========================================================
+   PROFISSÃO
+   ========================================================= */
+
+.about-role {
+  display: block !important;
+
+  width: fit-content !important;
+  max-width: 100%;
+
+  margin: 6px auto 0 auto !important;
+  padding: 0 !important;
+
+  justify-self: center !important;
+
+  font-size: 0.95rem;
+
+  line-height: 1;
+
+  text-align: center !important;
+
+  color: #6c757d;
+}
+
+
+
+/* =========================================================
+   FORMAÇÃO
+   ========================================================= */
+
+.about-education {
+  min-width: 0;
+  padding-top: 2px;
+}
+
+
+.about-education h3 {
+  font-size: 1.12rem;
+  font-weight: 650;
+
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+
+
+/* =========================================================
+   ITENS DA FORMAÇÃO
+   ========================================================= */
+
+.education-item {
+  display: grid;
+
+  grid-template-columns: 24px 1fr;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+}
+
+
+.education-icon {
+  color: #495057;
+
+  padding-top: 0;
+
+  line-height: 1.05;
+}
+
+
+.education-title {
+  font-size: 0.91rem;
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  color: #3f4449;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.education-year {
+  font-weight: 400;
+
+  color: #6c757d;
+}
+
+
+.education-institution {
+  font-size: 0.84rem;
+
+  line-height: 1.05;
+
+  color: #6c757d;
+
+  margin-top: 1px;
+  padding: 0;
+}
+
+
+
+/* =========================================================
+   SOBRE MIM
+   ========================================================= */
+
+.about-bio {
+  width: 100%;
+
+  margin-top: 0.3rem;
+  margin-bottom: 2.4rem;
+}
+
+
+.about-bio p {
+  line-height: 1.45;
+
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+/* =========================================================
+   INTERESSES
+   ========================================================= */
+
+.interests-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 4px;
+
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+}
+
+
+.interest-tag {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 16px;
+
+  background-color: #f1f3f5;
+
+  border: 1px solid #e3e6e8;
+
+  color: #495057;
+
+  font-size: 0.83rem;
+}
+
+
+
+/* =========================================================
+   COMPETÊNCIAS
+   ========================================================= */
+
+.skills-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 35px;
+
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+
+.skills-column {
+  min-width: 0;
+}
+
+
+.skills-column h3 {
+  font-size: 1.05rem;
+
+  font-weight: 650;
+
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+
+
+/* =========================================================
+   LINHAS DAS COMPETÊNCIAS
+   ========================================================= */
+
+.skill-row {
+  display: grid;
+
+  grid-template-columns: minmax(150px, 1fr) auto;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 8px;
+}
+
+
+.skill-name {
+  font-size: 0.88rem;
+
+  line-height: 1.1;
+
+  color: #495057;
+}
+
+
+
+/* =========================================================
+   PONTOS
+   ========================================================= */
+
+.skill-dots {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+
+.skill-dot {
+  display: inline-block !important;
+
+  flex: 0 0 12px;
+
+  width: 12px !important;
+  height: 12px !important;
+
+  min-width: 12px;
+  min-height: 12px;
+
+  border-radius: 50%;
+
+  background-color: #dfe2e5;
+}
+
+
+.skill-dot.active {
+  background-color: #4f87c5;
+}
+
+
+
+/* =========================================================
+   LEGENDA
+   ========================================================= */
+
+.skills-legend {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 6px;
+
+  margin-top: 5px;
+  margin-bottom: 2.3rem;
+
+  font-size: 0.72rem;
+
+  color: #6c757d;
+}
+
+
+.legend-dot {
+  display: inline-block;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background-color: #4f87c5;
+}
+
+
+.legend-empty {
+  background-color: #dfe2e5;
+}
+
+
+
+/* =========================================================
+   CURRÍCULO
+   ========================================================= */
+
+.cv-box {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.cv-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 13px;
+
+  border: 1px solid #adb5bd;
+
+  border-radius: 6px;
+
+  color: #495057;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+
+  transition: all 0.15s ease;
+}
+
+
+.cv-button:hover {
+  color: #0d6efd;
+
+  border-color: #0d6efd;
+
+  text-decoration: none;
+}
+
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-top {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+  }
+
+
+  .about-profile {
+    border-right: none;
+
+    border-bottom: 1px solid #dee2e6;
+
+    padding: 0 0 25px 0;
+  }
+
+
+  .about-education {
+    padding-top: 0;
+  }
+
+
+  .skills-container {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+}
+
+
+
+@media (max-width: 520px) {
+
+  .about-profile-inner img {
+    width: 190px;
+    height: 190px;
+  }
+
+
+  .skill-row {
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .skill-dots {
+    justify-content: flex-start;
+  }
+
+}
+
+</style>
+
+
+
+<div class="about-top">
+
+
+<div class="about-profile">
+
+<div class="about-profile-inner">
+
+<img src="img/Avatar.jpeg" alt="Aníbal Cantalice">
+
+<div class="about-name">
+Aníbal Cantalice
+</div>
+
+<div class="about-role">
+Cientista · Professor
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="about-education">
+
+<h3>Formação</h3>
+
+
+<div class="education-item">
+
+<div class="education-icon">
+<i class="bi bi-mortarboard-fill"></i>
+</div>
+
+<div>
+
+<div class="education-title">
+Doutorado em Etnobiologia e Conservação da Natureza
+<span class="education-year">· 2025</span>
+</div>
+
+<div class="education-institution">
+Universidade Federal Rural de Pernambuco (UFRPE)
+</div>
+
+</div>
+
+</div>
+
+
+<div class="education-item">
+
+<div class="education-icon">
+<i class="bi bi-mortarboard-fill"></i>
+</div>
+
+<div>
+
+<div class="education-title">
+Mestrado em Desenvolvimento e Meio Ambiente
+<span class="education-year">· 2021</span>
+</div>
+
+<div class="education-institution">
+Universidade Federal do Piauí (UFPI)
+</div>
+
+</div>
+
+</div>
+
+
+<div class="education-item">
+
+<div class="education-icon">
+<i class="bi bi-mortarboard-fill"></i>
+</div>
+
+<div>
+
+<div class="education-title">
+Licenciatura em Ciências Biológicas
+<span class="education-year">· 2017</span>
+</div>
+
+<div class="education-institution">
+Universidade Federal do Piauí (UFPI)
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+## Sobre mim
+
+<div class="about-bio">
+
+<p>
+Minha trajetória acadêmica começou com uma curiosidade simples. Entender como as pessoas percebem, utilizam e transformam o ambiente ao seu redor. A Etnobiologia se tornou o espaço onde encontrei muitas dessas perguntas e, mais recentemente, tenho buscado explorá-las em escalas mais amplas — para além das comunidades locais — por meio da macroetnobiologia.
+</p>
+<p>
+No caminho, acabei desenvolvendo outras duas paixões: analisar dados e programar. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais.
+</p>
+<p>
+Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descobrir por que um <em>script</em> resolveu se rebelar, é nessa mistura de pessoas, ambiente, programação, estatística e dados que tenho construído minha trajetória científica.
+</p>
+
+</div>
+
+
+## Interesses de pesquisa
+
+<div class="interests-container">
+
+<span class="interest-tag">Conservação</span>
+
+<span class="interest-tag">Ecologia Númerica</span>
+
+<span class="interest-tag">Etnobiologia</span>
+
+<span class="interest-tag">Macroetnobiologia</span>
+
+<span class="interest-tag">Sistemas socioecológicos</span>
+
+</div>
+
+## Competências
+
+<div class="skills-container">
+
+
+<div class="skills-column">
+
+<h3>Hard Skills</h3>
+
+
+<div class="skill-row">
+<div class="skill-name">Etnobiologia e Etnoecologia</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Análise de dados em R</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Modelagem estatística</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Métodos de pesquisa de campo</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Análise espacial e SIG</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Escrita científica</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="skills-column">
+
+<h3>Soft Skills</h3>
+
+
+<div class="skill-row">
+<div class="skill-name">Pensamento crítico</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Pensamento analítico</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Comunicação científica</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Colaboração interdisciplinar</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Liderança científica</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+
+<div class="skill-row">
+<div class="skill-name">Gestão de projetos</div>
+
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="skills-legend">
+
+<span class="legend-dot"></span>
+<span>nível desenvolvido</span>
+
+<span style="margin-left:8px;" class="legend-dot legend-empty"></span>
+<span>a desenvolver</span>
+
+</div>
+
+
+## Currículo
+
+<p class="justify">
+Uma versão completa da minha trajetória acadêmica e profissional está disponível no currículo abaixo.
+</p>
+
+
+<div class="cv-box">
+
+<a class="cv-button" href="cv/cv.pdf">
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+Baixar CV (PDF)
+
+</a>
+
+</div>

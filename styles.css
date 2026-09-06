@@ -1,0 +1,19 @@
+/* Ajustes visuais simples. Edite à vontade. */
+
+.navbar-title {
+  font-weight: 600;
+}
+
+/* Largura de leitura mais confortável no conteúdo */
+main {
+  max-width: 60rem;
+}
+
+/* Deixa a foto do perfil um pouco mais suave */
+.about-image {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+p {
+  text-align: justify;
+}

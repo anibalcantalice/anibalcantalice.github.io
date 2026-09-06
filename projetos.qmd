@@ -1,0 +1,79 @@
+---
+title: ""
+---
+
+<style>
+
+.construction-box {
+  min-height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Ícone */
+.construction-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* Em construção */
+.construction-title {
+  font-size: 1.7rem;
+  font-weight: 650;
+
+  margin-bottom: 1rem;
+
+  color: #343a40;
+
+  text-align: center;
+}
+
+/* Texto abaixo */
+.construction-text {
+  max-width: 520px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: #6c757d;
+
+  text-align: center !important;
+}
+
+/* Garante que o parágrafo criado pelo Quarto também fique centralizado */
+.construction-text p {
+  margin: 0;
+
+  text-align: center !important;
+}
+
+</style>
+
+<div class="construction-box">
+
+<div class="construction-icon">
+<i class="bi bi-tools"></i>
+</div>
+
+<div class="construction-title">
+Em construção
+</div>
+
+<div class="construction-text">
+
+Esta seção está sendo preparada. Em breve, você encontrará aqui meus principais projetos de pesquisa e desenvolvimento.
+
+</div>
+
+</div>
