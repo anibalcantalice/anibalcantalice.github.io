@@ -25,7 +25,7 @@
     "href": "sobre.html#competências",
     "title": "Aníbal Cantalice",
     "section": "Competências",
-    "text": "Competências\n\n\n\nHard Skills\n\n\n\nEtnobiologia e Etnoecologia\n\n\n      \n\n\n\n\nAnálise de dados em R\n\n\n      \n\n\n\n\nModelagem estatística\n\n\n      \n\n\n\n\nMétodos de pesquisa de campo\n\n\n      \n\n\n\n\nAnálise espacial e SIG\n\n\n      \n\n\n\n\nEscrita científica\n\n\n      \n\n\n\n\n\nSoft Skills\n\n\n\nPensamento crítico\n\n\n      \n\n\n\n\nPensamento analítico\n\n\n      \n\n\n\n\nComunicação científica\n\n\n      \n\n\n\n\nColaboração interdisciplinar\n\n\n      \n\n\n\n\nLiderança científica\n\n\n      \n\n\n\n\nGestão de projetos\n\n\n      \n\n\n\n\n\n nível desenvolvido\n a desenvolver"
+    "text": "Competências\n\n\n\nHard Skills\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n\nSoft Skills\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n\n nível desenvolvido\n a desenvolver"
   },
   {
     "objectID": "sobre.html#currículo",
@@ -53,7 +53,7 @@
     "href": "blog/posts/primeiro-post/index.html#escrevendo-com-r",
     "title": "Meu primeiro post",
     "section": "Escrevendo com R",
-    "text": "Escrevendo com R\nComo o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:\n\nx &lt;- rnorm(100)\nmean(x)\n\n[1] 0.1207665\n\n\nE também gerar gráficos automaticamente:\n\nhist(x, col = \"steelblue\", main = \"\", xlab = \"Valores\")\n\n\n\n\nUm histograma de exemplo\n\n\n\n\nEscreva em Markdown normalmente: negrito, itálico, listas, links e imagens funcionam como esperado."
+    "text": "Escrevendo com R\nComo o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:\n\nx &lt;- rnorm(100)\nmean(x)\n\n[1] -0.1133445\n\n\nE também gerar gráficos automaticamente:\n\nhist(x, col = \"steelblue\", main = \"\", xlab = \"Valores\")\n\n\n\n\nUm histograma de exemplo\n\n\n\n\nEscreva em Markdown normalmente: negrito, itálico, listas, links e imagens funcionam como esperado."
   },
   {
     "objectID": "blog/index.html",
