@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Aníbal Cantalice",
+    "section": "",
+    "text": "Aníbal Cantalice\n\n\nCientista · Professor\n\n\n\n\n\n\n\n\n\n\n\nDoutorado em Etnobiologia e Conservação da Natureza · 2025\n\n\nUniversidade Federal Rural de Pernambuco (UFRPE)\n\n\n\n\n\n\n\n\n\nMestrado em Desenvolvimento e Meio Ambiente · 2021\n\n\nUniversidade Federal do Piauí (UFPI)\n\n\n\n\n\n\n\n\n\nLicenciatura em Ciências Biológicas · 2017\n\n\nUniversidade Federal do Piauí (UFPI)"
+  },
+  {
+    "objectID": "sobre.html#sobre-mim",
+    "href": "sobre.html#sobre-mim",
+    "title": "Aníbal Cantalice",
+    "section": "Sobre mim",
+    "text": "Sobre mim\n\n\nMinha trajetória acadêmica começou com uma curiosidade simples. Entender como as pessoas percebem, utilizam e transformam o ambiente ao seu redor. A Etnobiologia se tornou o espaço onde encontrei muitas dessas perguntas e, mais recentemente, tenho buscado explorá-las em escalas mais amplas — para além das comunidades locais — por meio da macroetnobiologia.\n\n\nNo caminho, acabei desenvolvendo outras duas paixões: analisar dados e programar. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais.\n\n\nEntre trabalho de campo, código, modelos, mapas e algumas horas tentando descobrir por que um script resolveu se rebelar, é nessa mistura de pessoas, ambiente, programação, estatística e dados que tenho construído minha trajetória científica."
+  },
+  {
+    "objectID": "sobre.html#interesses-de-pesquisa",
+    "href": "sobre.html#interesses-de-pesquisa",
+    "title": "Aníbal Cantalice",
+    "section": "Interesses de pesquisa",
+    "text": "Interesses de pesquisa\n\nConservação\nEcologia Númerica\nEtnobiologia\nMacroetnobiologia\nSistemas socioecológicos"
+  },
+  {
+    "objectID": "sobre.html#competências",
+    "href": "sobre.html#competências",
+    "title": "Aníbal Cantalice",
+    "section": "Competências",
+    "text": "Competências\n\n\n\nHard Skills\n\n\n\nEtnobiologia e Etnoecologia\n\n\n      \n\n\n\n\nAnálise de dados em R\n\n\n      \n\n\n\n\nModelagem estatística\n\n\n      \n\n\n\n\nMétodos de pesquisa de campo\n\n\n      \n\n\n\n\nAnálise espacial e SIG\n\n\n      \n\n\n\n\nEscrita científica\n\n\n      \n\n\n\n\n\nSoft Skills\n\n\n\nPensamento crítico\n\n\n      \n\n\n\n\nPensamento analítico\n\n\n      \n\n\n\n\nComunicação científica\n\n\n      \n\n\n\n\nColaboração interdisciplinar\n\n\n      \n\n\n\n\nLiderança científica\n\n\n      \n\n\n\n\nGestão de projetos\n\n\n      \n\n\n\n\n\n nível desenvolvido\n a desenvolver"
+  },
+  {
+    "objectID": "sobre.html#currículo",
+    "href": "sobre.html#currículo",
+    "title": "Aníbal Cantalice",
+    "section": "Currículo",
+    "text": "Currículo\n\nUma versão completa da minha trajetória acadêmica e profissional está disponível no currículo abaixo.\n\n\n\n\nBaixar CV (PDF)"
+  },
+  {
+    "objectID": "projetos.html",
+    "href": "projetos.html",
+    "title": "Aníbal Cantalice",
+    "section": "",
+    "text": "Em construção\n\n\nEsta seção está sendo preparada. Em breve, você encontrará aqui meus principais projetos de pesquisa e desenvolvimento."
+  },
+  {
+    "objectID": "blog/posts/primeiro-post/index.html",
+    "href": "blog/posts/primeiro-post/index.html",
+    "title": "Meu primeiro post",
+    "section": "",
+    "text": "Este é um post de exemplo. Para criar um novo, basta duplicar esta pasta dentro de blog/posts/, renomeá-la e editar o texto."
+  },
+  {
+    "objectID": "blog/posts/primeiro-post/index.html#escrevendo-com-r",
+    "href": "blog/posts/primeiro-post/index.html#escrevendo-com-r",
+    "title": "Meu primeiro post",
+    "section": "Escrevendo com R",
+    "text": "Escrevendo com R\nComo o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:\n\nx &lt;- rnorm(100)\nmean(x)\n\n[1] 0.1207665\n\n\nE também gerar gráficos automaticamente:\n\nhist(x, col = \"steelblue\", main = \"\", xlab = \"Valores\")\n\n\n\n\nUm histograma de exemplo\n\n\n\n\nEscreva em Markdown normalmente: negrito, itálico, listas, links e imagens funcionam como esperado."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Aníbal Cantalice",
+    "section": "",
+    "text": "Em construção\n\n\nEsta seção está sendo preparada. Em breve, você encontrará aqui textos, reflexões e conteúdos relacionados à minha pesquisa e trajetória acadêmica."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Aníbal Cantalice",
+    "section": "",
+    "text": "Sou Etnobiólogo e cientista de dados, doutor em Etnobiologia e Conservação da Natureza. Atuo com pesquisa de campo, análise de dados e métodos quantitativos para investigar sistemas socioecológicos.\n\nSaiba mais sobre mim →"
+  },
+  {
+    "objectID": "publicacoes.html",
+    "href": "publicacoes.html",
+    "title": "Publicações",
+    "section": "",
+    "text": "Todas as publicações\n\n\nMostrar todas"
+  }
+]

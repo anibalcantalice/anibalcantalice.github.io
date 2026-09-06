@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Aníbal Cantalice</title>
+<link>https://Anibal-Cantalice.github.io/blog/</link>
+<atom:link href="https://Anibal-Cantalice.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Site pessoal e acadêmico</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sat, 05 Sep 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Meu primeiro post</title>
+  <dc:creator>Seu Nome</dc:creator>
+  <link>https://Anibal-Cantalice.github.io/blog/posts/primeiro-post/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Este é um post de exemplo. Para criar um novo, basta duplicar esta pasta dentro de <code>blog/posts/</code>, renomeá-la e editar o texto.</p>
+<section id="escrevendo-com-r" class="level2">
+<h2 class="anchored" data-anchor-id="escrevendo-com-r">Escrevendo com R</h2>
+<p>Como o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">x <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(x)</span></code></pre></div></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1153292</code></pre>
+</div>
+</div>
+<p>E também gerar gráficos automaticamente:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">hist</span>(x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">col =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"steelblue"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">main =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xlab =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Valores"</span>)</span></code></pre></div></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://Anibal-Cantalice.github.io/blog/posts/primeiro-post/index_files/figure-html/grafico-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Um histograma de exemplo</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Escreva em Markdown normalmente: <strong>negrito</strong>, <em>itálico</em>, listas, links e imagens funcionam como esperado.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>novidades</category>
+  <category>exemplo</category>
+  <guid>https://Anibal-Cantalice.github.io/blog/posts/primeiro-post/</guid>
+  <pubDate>Sat, 05 Sep 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://Anibal-Cantalice.github.io/blog/posts/primeiro-post/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>
