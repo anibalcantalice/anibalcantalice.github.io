@@ -653,10 +653,7 @@ Universidade Federal do Piauí (UFPI)
 Minha trajetória acadêmica começou com uma curiosidade simples. Entender como as pessoas percebem, utilizam e transformam o ambiente ao seu redor. A Etnobiologia se tornou o espaço onde encontrei muitas dessas perguntas e, mais recentemente, tenho buscado explorá-las em escalas mais amplas — para além das comunidades locais — por meio da macroetnobiologia.
 </p>
 <p>
-No caminho, acabei desenvolvendo outras duas paixões: analisar dados e programar. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais.
-</p>
-<p>
-Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descobrir por que um <em>script</em> resolveu se rebelar, é nessa mistura de pessoas, ambiente, programação, estatística e dados que tenho construído minha trajetória científica.
+No caminho, acabei desenvolvendo outras duas paixões: Estatística e Programação. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais.
 </p>
 
 </div>
@@ -682,79 +679,12 @@ Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descob
 
 <div class="skills-container">
 
-
 <div class="skills-column">
 
 <h3>Hard Skills</h3>
 
-
 <div class="skill-row">
-<div class="skill-name">Etnobiologia e Etnoecologia</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Análise de dados em R</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Modelagem estatística</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Métodos de pesquisa de campo</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Análise espacial e SIG</div>
-
+<div class="skill-name">Planejamento experimental</div>
 <div class="skill-dots">
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
@@ -764,101 +694,81 @@ Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descob
 <span class="skill-dot"></span>
 <span class="skill-dot"></span>
 </div>
-
 </div>
 
+<div class="skill-row">
+<div class="skill-name">Estatística e ecologia numérica</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
+
+<div class="skill-row">
+<div class="skill-name">Métodos etnobiológicos</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
+
+<div class="skill-row">
+<div class="skill-name">Análise de sistemas socioecológicos</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
+
+<div class="skill-row">
+<div class="skill-name">Meta-análise e síntese de dados</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
 
 <div class="skill-row">
 <div class="skill-name">Escrita científica</div>
-
 <div class="skill-dots">
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
 </div>
 
 </div>
-
-</div>
-
-
 
 <div class="skills-column">
 
-<h3>Soft Skills</h3>
-
-
-<div class="skill-row">
-<div class="skill-name">Pensamento crítico</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-</div>
-
-</div>
-
+<h3>Linguagens</h3>
 
 <div class="skill-row">
-<div class="skill-name">Pensamento analítico</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Comunicação científica</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Colaboração interdisciplinar</div>
-
-<div class="skill-dots">
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot active"></span>
-<span class="skill-dot"></span>
-</div>
-
-</div>
-
-
-<div class="skill-row">
-<div class="skill-name">Liderança científica</div>
-
+<div class="skill-name">R (programação)</div>
 <div class="skill-dots">
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
@@ -868,40 +778,69 @@ Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descob
 <span class="skill-dot"></span>
 <span class="skill-dot"></span>
 </div>
-
 </div>
 
+<div class="skill-row">
+<div class="skill-name">Inglês (escuta/fala)</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
 
 <div class="skill-row">
-<div class="skill-name">Gestão de projetos</div>
+<div class="skill-name">Inglês (escrita)</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
 
+<div class="skill-row">
+<div class="skill-name">Espanhol (escuta/fala)</div>
 <div class="skill-dots">
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
+</div>
+
+<div class="skill-row">
+<div class="skill-name">Espanhol (escrita)</div>
+<div class="skill-dots">
+<span class="skill-dot active"></span>
 <span class="skill-dot active"></span>
 <span class="skill-dot"></span>
 <span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+<span class="skill-dot"></span>
+</div>
 </div>
 
 </div>
 
 </div>
-
-
-</div>
-
-
 
 <div class="skills-legend">
-
 <span class="legend-dot"></span>
 <span>nível desenvolvido</span>
-
 <span style="margin-left:8px;" class="legend-dot legend-empty"></span>
 <span>a desenvolver</span>
-
 </div>
 
 
@@ -911,14 +850,10 @@ Entre trabalho de campo, código, modelos, mapas e algumas horas tentando descob
 Uma versão completa da minha trajetória acadêmica e profissional está disponível no currículo abaixo.
 </p>
 
-
 <div class="cv-box">
 
-<a class="cv-button" href="cv/cv.pdf">
-
 <i class="bi bi-file-earmark-pdf"></i>
-
-Baixar CV (PDF)
+Em Construção
 
 </a>
 
