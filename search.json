@@ -11,7 +11,7 @@
     "href": "sobre.html#sobre-mim",
     "title": "Aníbal Cantalice",
     "section": "Sobre mim",
-    "text": "Sobre mim\n\n\nMinha trajetória acadêmica começou com uma curiosidade simples. Entender como as pessoas percebem, utilizam e transformam o ambiente ao seu redor. A Etnobiologia se tornou o espaço onde encontrei muitas dessas perguntas e, mais recentemente, tenho buscado explorá-las em escalas mais amplas — para além das comunidades locais — por meio da macroetnobiologia.\n\n\nNo caminho, acabei desenvolvendo outras duas paixões: analisar dados e programar. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais.\n\n\nEntre trabalho de campo, código, modelos, mapas e algumas horas tentando descobrir por que um script resolveu se rebelar, é nessa mistura de pessoas, ambiente, programação, estatística e dados que tenho construído minha trajetória científica."
+    "text": "Sobre mim\n\n\nMinha trajetória acadêmica começou com uma curiosidade simples. Entender como as pessoas percebem, utilizam e transformam o ambiente ao seu redor. A Etnobiologia se tornou o espaço onde encontrei muitas dessas perguntas e, mais recentemente, tenho buscado explorá-las em escalas mais amplas — para além das comunidades locais — por meio da macroetnobiologia.\n\n\nNo caminho, acabei desenvolvendo outras duas paixões: Estatística e Programação. Gosto especialmente de pensar em como a programação pode tornar as análises mais eficientes, reproduzíveis e claras, e a linguagem R acabou se tornando uma das minhas principais ferramentas nesse processo. Também tenho experiência com estatística inferencial, modelagem estatística e análise e visualização de dados tabulares e geoespaciais."
   },
   {
     "objectID": "sobre.html#interesses-de-pesquisa",
@@ -25,14 +25,14 @@
     "href": "sobre.html#competências",
     "title": "Aníbal Cantalice",
     "section": "Competências",
-    "text": "Competências\n\n\n\nHard Skills\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n\nSoft Skills\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n[x.x.x]\n\n\n      \n\n\n\n\n\n nível desenvolvido\n a desenvolver"
+    "text": "Competências\n\n\n\nHard Skills\n\n\n\nPlanejamento experimental\n\n\n      \n\n\n\n\nEstatística e ecologia numérica\n\n\n      \n\n\n\n\nMétodos etnobiológicos\n\n\n      \n\n\n\n\nAnálise de sistemas socioecológicos\n\n\n      \n\n\n\n\nMeta-análise e síntese de dados\n\n\n      \n\n\n\n\nEscrita científica\n\n\n      \n\n\n\n\n\nLinguagens\n\n\n\nR (programação)\n\n\n      \n\n\n\n\nInglês (escuta/fala)\n\n\n      \n\n\n\n\nInglês (escrita)\n\n\n      \n\n\n\n\nEspanhol (escuta/fala)\n\n\n      \n\n\n\n\nEspanhol (escrita)\n\n\n      \n\n\n\n\n\n nível desenvolvido  a desenvolver"
   },
   {
     "objectID": "sobre.html#currículo",
     "href": "sobre.html#currículo",
     "title": "Aníbal Cantalice",
     "section": "Currículo",
-    "text": "Currículo\n\nUma versão completa da minha trajetória acadêmica e profissional está disponível no currículo abaixo.\n\n\n\n\nBaixar CV (PDF)"
+    "text": "Currículo\n\nUma versão completa da minha trajetória acadêmica e profissional está disponível no currículo abaixo.\n\n\n Em Construção"
   },
   {
     "objectID": "projetos.html",
@@ -53,7 +53,7 @@
     "href": "blog/posts/primeiro-post/index.html#escrevendo-com-r",
     "title": "Meu primeiro post",
     "section": "Escrevendo com R",
-    "text": "Escrevendo com R\nComo o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:\n\nx &lt;- rnorm(100)\nmean(x)\n\n[1] -0.1133445\n\n\nE também gerar gráficos automaticamente:\n\nhist(x, col = \"steelblue\", main = \"\", xlab = \"Valores\")\n\n\n\n\nUm histograma de exemplo\n\n\n\n\nEscreva em Markdown normalmente: negrito, itálico, listas, links e imagens funcionam como esperado."
+    "text": "Escrevendo com R\nComo o site é feito em Quarto, você pode misturar texto com código R que é executado de verdade na hora de gerar a página:\n\nx &lt;- rnorm(100)\nmean(x)\n\n[1] 0.1476184\n\n\nE também gerar gráficos automaticamente:\n\nhist(x, col = \"steelblue\", main = \"\", xlab = \"Valores\")\n\n\n\n\nUm histograma de exemplo\n\n\n\n\nEscreva em Markdown normalmente: negrito, itálico, listas, links e imagens funcionam como esperado."
   },
   {
     "objectID": "blog/index.html",
