@@ -17,3 +17,41 @@ main {
 p {
   text-align: justify;
 }
+/* ===================================================
+   No celular, alinha o texto à esquerda.
+   O justificado abre espaços grandes entre as palavras
+   em telas estreitas; à esquerda fica mais legível.
+   No computador o texto continua justificado.
+   =================================================== */
+@media (max-width: 768px) {
+  p,
+  .justify,
+  .about-bio p,
+  main p {
+    text-align: left !important;
+  }
+}
+
+/* ===================================================
+   No menu "hambúrguer" (celular/tablet), deixa os
+   ícones de redes sociais em LINHA, lado a lado,
+   em vez de empilhados um embaixo do outro.
+   O menu colapsa abaixo de 992px.
+   =================================================== */
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav-scroll {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+    padding-left: 0.2rem;
+  }
+  .navbar .navbar-nav-scroll .nav-item {
+    width: auto;
+  }
+  .navbar .navbar-nav-scroll .nav-link {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
